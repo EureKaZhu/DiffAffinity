@@ -1,0 +1,35 @@
+# @package _global_
+
+num_workers: 8
+
+paths:
+  experiments: results
+
+hydra:
+  sweep:
+    dir: ./${paths.experiments}/${name}/${hydra.job.override_dirname}
+    subdir: ${seed}
+    # subdir: ${now:%Y-%m-%d_%H-%M-%S}_${hydra.job.num}_${seed}
+  run:
+    dir: ./${paths.experiments}/${name}/${hydra.job.override_dirname}/${seed}
+    # dir: ./${paths.experiments}/${name}/${hydra.job.override_dirname}/${now:%Y-%m-%d_%H-%M-%S}_${seed}
+
+  job_logging:
+    formatters:
+      simple:
+        format: '[%(levelname)s] - %(message)s'
+    handlers:
+      file:
+        filename: run.log
+    root:
+      handlers: [console, file]
+
+  job:
+    config:
+      # configuration for the ${hydra.job.override_dirname} runtime variable
+      override_dirname:
+        exclude_keys: [name, experiment, server, seed, run, resume, num_workers, num_gpus, val_freq, logger, mode, n_jobs, test_val, test_test, test_plot]
+
+# git:
+#   commit: ${git_commit:}
+#   diff: ${bool:${git_diff:}}

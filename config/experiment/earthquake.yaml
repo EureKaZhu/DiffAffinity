@@ -1,0 +1,11 @@
+# @package _global_
+
+# to execute this experiment run:
+# python main.py experiment=s2_toy
+
+name: earthquake
+experiment: earthquake
+
+defaults:
+  - earth_data
+  - /dataset: earthquake

@@ -1,0 +1,26 @@
+# @package _global_
+
+# to execute this experiment run:
+# python main.py experiment=s2_toy
+
+defaults:
+  - /manifold: nsphere
+  - /model: rsgm
+  - /architecture: concat
+  - /embedding: none
+
+manifold:
+  dim: 2
+
+flow:
+  beta_schedule:
+    beta_0: 0.001
+    beta_f: 5
+
+splits: [0.8, 0.1, 0.1]
+batch_size: 512
+warmup_steps: 1000
+steps: 600000
+val_freq: 10000
+ema_rate: 0.999
+eps: 1e-3

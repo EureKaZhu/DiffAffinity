@@ -1,0 +1,6 @@
+csv:
+  _target_: score_sde.utils.loggers_pl.CSVLogger
+  save_dir: logs
+  name: ""
+  # version: ""
+  flush_logs_every_n_steps: 1000

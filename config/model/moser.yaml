@@ -1,0 +1,9 @@
+# @package _global_
+
+defaults:
+  - /transform: id
+  - /flow: cnf
+  - /base: default
+  - /pushf: moser
+  - /loss: moser
+  - /generator: div_free

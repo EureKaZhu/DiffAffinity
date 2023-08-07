@@ -1,0 +1,34 @@
+# @package _global_
+
+name: so3
+
+defaults:
+  - /dataset: wrapped
+  - /manifold: so3
+  - /architecture: concat
+  - /embedding: none
+  - /model: rsgm
+  # - override /generator: lie_algebra
+
+data_dir: /data/ziz/not-backed-up/scratch/score-sde/data/
+
+dataset:
+  K: 32
+  mean: unif
+  scale: 100
+  scale_type: random
+
+
+flow:
+  beta_schedule:
+    beta_0: 0.001
+    beta_f: 6
+
+splits: [0.8, 0.1, 0.1]
+batch_size: 512
+eval_batch_size: 2048
+warmup_steps: 100
+steps: 100000
+val_freq: 10000
+ema_rate: 0.999
+eps: 2e-4

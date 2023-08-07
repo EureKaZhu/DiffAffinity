@@ -1,0 +1,20 @@
+# @package _global_
+
+# to execute this experiment run:
+# python main.py experiment=poincare
+
+name: poincare
+
+defaults:
+  - hyperboloid
+  - override /generator: transport
+
+mean: 
+  _target_: jax.numpy.array
+  _convert_: all
+  object: [[-0.4, 0.0],[0.4, 0.0],[0.0, -0.4],[0.0, 0.4]]
+dataset:
+  scale: [[0.15, 0.5],[0.15, 0.5],[0.5, 0.15],[0.5, 0.15]]
+
+manifold:
+  default_coords_type: ball
