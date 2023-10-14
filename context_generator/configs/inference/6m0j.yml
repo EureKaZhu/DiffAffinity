@@ -1,11 +1,11 @@
 name: 6M0J
 model:
-  rde_checkpoint: checkpoint/SidechainDiff_ckpt
+  rde_checkpoint: ./checkpoint/SidechainDiff_ckpt
   encoder:
     node_feat_dim: 128
     pair_feat_dim: 64
     num_layers: 3
 
-checkpoint: checkpoint/DiffAffinity_ckpt/cvfold_1
-pdb: data/6m0j.pdb
-mutations: data/DDG_6m0j.csv
+checkpoint: ./checkpoint/DiffAffinity_ckpt/cvfold_1
+pdb: ./data/6m0j.pdb
+mutations: ./data/DDG_6m0j.csv

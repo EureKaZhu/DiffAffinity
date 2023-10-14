@@ -15,7 +15,8 @@ git clone https://github.com/oxcsml/geomstats.git
 conda create -n DiffAffinity python=3.9
 conda activate DiffAffinity
 pip install -r requirements.txt
-pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install jaxlib==0.4.1+cuda11.cudnn86 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+# pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 GEOMSTATS_BACKEND=jax pip install -e geomstats
 pip install -e .
 ```

@@ -1,12 +1,12 @@
 name: 7FAE
 model:
-  rde_checkpoint: checkpoint/SidechainDiff_ckpt
+  rde_checkpoint: ./checkpoint/SidechainDiff_ckpt
   encoder:
     node_feat_dim: 128
     pair_feat_dim: 64
     num_layers: 3
 
-checkpoint: checkpoint/DiffAffinity_ckpt/cvfold_1
+checkpoint: ./checkpoint/DiffAffinity_ckpt/cvfold_1
 pdb: data/7FAE_RBD_Fv.pdb
 mutations:
 # H-CDR1
