@@ -94,7 +94,7 @@ class PMDataset(Dataset):
         data['aa_mut'] = data['aa'].clone()
         data['aa_mut'][mut_pos_idx] = one_to_index(mut['mt'])
         data = self.transform(data)
-        data['ddG'] = mut['ddg']
+        data['ddG'] = mut['ddg'] # 预测7FAE时似乎不需要这个key
         data['mutstr'] = '{}{}{}{}'.format(
             mut['wt'],
             mut['position'][0],
