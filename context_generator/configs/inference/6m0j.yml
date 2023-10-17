@@ -1,6 +1,6 @@
 name: 6M0J
 model:
-  rde_checkpoint: ./checkpoint/SidechainDiff_ckpt
+  SidechainDiff_checkpoint: ./checkpoint/SidechainDiff_ckpt
   encoder:
     node_feat_dim: 128
     pair_feat_dim: 64

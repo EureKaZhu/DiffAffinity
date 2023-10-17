@@ -13,7 +13,9 @@ from Bio.PDB.Polypeptide import one_to_index
 
 
 from context_generator.utils.protein.parsers import parse_biopython_structure
-
+"""
+    Modified by the https://github.com/luost26/RDE-PPI/tree/main/rde/datasets
+"""
 
 def load_skempi_entries(csv_path, pdb_dir, block_list={'1KBH'}):
     df = pd.read_csv(csv_path, sep=';')
@@ -203,9 +205,9 @@ class SkempiDataset(Dataset):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--csv_path', type=str, default='/home/liushiwei/myproj/SKEMPI_v2/skempi_v2.csv')
-    parser.add_argument('--pdb_dir', type=str, default='/home/liushiwei/myproj/SKEMPI_v2/PDBs')
-    parser.add_argument('--cache_dir', type=str, default='/home/liushiwei/myproj/SKEMPI_v2/SKEMPI_v2_cache')
+    parser.add_argument('--csv_path', type=str, default='./SKEMPI_v2/skempi_v2.csv')
+    parser.add_argument('--pdb_dir', type=str, default='./SKEMPI_v2/PDBs')
+    parser.add_argument('--cache_dir', type=str, default='./SKEMPI_v2/SKEMPI_v2_cache')
     parser.add_argument('--reset', action='store_true', default=False)
     args = parser.parse_args()
 

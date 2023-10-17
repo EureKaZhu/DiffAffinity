@@ -18,7 +18,9 @@ from context_generator.utils.protein.parsers import parse_biopython_structure
 ClusterIdType = str
 PdbCodeType = str
 ChainIdType = str
-
+"""
+    Modified by the https://github.com/luost26/RDE-PPI/tree/main/rde/datasets
+"""
 
 def _process_structure(cif_path, structure_id) -> Optional[Dict]:
     parser = MMCIFParser(QUIET=True)
@@ -43,10 +45,10 @@ class PDBRedoChainDataset(Dataset):
     def __init__(
         self, 
         split,
-        pdbredo_dir = '/home/liushiwei/git_reps/RDE-PPI/data/PDB_REDO', 
-        clusters_path = '/home/liushiwei/git_reps/RDE-PPI/data/pdbredo_clusters.txt',
-        splits_path = '/home/liushiwei/git_reps/RDE-PPI/data/pdbredo_splits.txt',
-        processed_dir = '/home/liushiwei/git_reps/RDE-PPI/data/PDB_REDO_processed',
+        pdbredo_dir = './PDB_REDO', 
+        clusters_path = './pdbredo_clusters.txt',
+        splits_path = './pdbredo_splits.txt',
+        processed_dir = './PDB_REDO_processed',
         num_preprocess_jobs = math.floor(cpu_count() * 0.8),
         transform = None,
         reset = False,

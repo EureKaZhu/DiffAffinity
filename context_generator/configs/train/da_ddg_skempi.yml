@@ -1,14 +1,14 @@
 model:
-  rde_checkpoint: /home/liushiwei/git_reps/step_199000
+  SidechainDiff_checkpoint: /checkpoints/step_199000
   encoder:
     node_feat_dim: 128
     pair_feat_dim: 64
     num_layers: 3
 
 data:
-  csv_path: /home/liushiwei/git_reps/SKEMPI_v2/skempi_v2.csv
-  pdb_dir: /home/liushiwei/git_reps/SKEMPI_v2/PDBs
-  cache_dir: /home/liushiwei/git_reps/SKEMPI_v2/SKEMPI_v2_cache
+  csv_path: ./SKEMPI_v2/skempi_v2.csv
+  pdb_dir: ./SKEMPI_v2/PDBs
+  cache_dir: ./SKEMPI_v2/SKEMPI_v2_cache
   transform:
   - type: select_atom
     resolution: backbone+CB

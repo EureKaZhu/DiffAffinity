@@ -43,7 +43,7 @@ from context_generator.modules.encoders.attn import GAEncoder
 
 log = logging.getLogger(__name__)
 writer = SummaryWriter('train')
-context_gen_cfg = f"/home/liushiwei/git_reps/opensource/tmp/context_generator/configs/train/diff.yml"
+context_gen_cfg = f"./context_generator/configs/train/diff.yml"
 
 # jax.config.update('jax_array', True)
 

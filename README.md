@@ -3,7 +3,7 @@
 ![text](./figures/RDGM.png)
 
 Predicting mutational effects on protein-protein
-binding via a side-chain diffusion probabilistic model (NeurIPS preprint)
+binding via a side-chain diffusion probabilistic model (NeurIPS 2023 Poster)
 
 
 ## Install

@@ -21,7 +21,7 @@ from abfold.trainer import dataset
 from abfold.data.utils import save_ig_pdb, save_general_pdb
 
 import sys
-sys.path.append("/home/liushiwei/rebuttal/riemannian-score-sde")
+sys.path.append("./riemannian-score-sde")
 
 
 ressymb_to_resindex = {

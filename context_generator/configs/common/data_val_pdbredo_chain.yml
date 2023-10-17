@@ -1,9 +1,9 @@
 type: pdbredo_chain
 split: val
-pdbredo_dir: /home/liushiwei/myproj/PDB_REDO/PDB_REDO
-clusters_path: /home/liushiwei/git_reps/opensource/InterfaceDiff/DiffAffinity/data/pdbredo_clusters.txt
-splits_path: /home/liushiwei/git_reps/opensource/InterfaceDiff/DiffAffinity/data/pdbredo_splits.txt
-processed_dir: /home/liushiwei/git_reps/RDE-PPI/data/PDB_REDO_processed
+pdbredo_dir: ./PDB_REDO
+clusters_path: ./pdbredo_clusters.txt
+splits_path: ./pdbredo_splits.txt
+processed_dir: ./PDB_REDO_processed
 
 transform:
 ## Only backbone atoms and CB are visible to rotamer predictor

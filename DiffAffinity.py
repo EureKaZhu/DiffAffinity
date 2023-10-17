@@ -180,7 +180,7 @@ if __name__ == '__main__':
         if isinstance(v, list) or isinstance(v, int):
             _ = ibatch.pop(k)  
     params = model.init(rng=next_rng, batch=ibatch)
-    encoder_train_state = restore(config.model.rde_checkpoint)
+    encoder_train_state = restore(config.model.SidechainDiff_checkpoint)
     encoder_params = encoder_train_state.params
     for k in list(encoder_params.keys()):
         if k.startswith('torus_generator'):
