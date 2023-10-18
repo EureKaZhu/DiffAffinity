@@ -16,7 +16,6 @@ conda create -n DiffAffinity python=3.9
 conda activate DiffAffinity
 pip install -r requirements.txt
 pip install jaxlib==0.4.1+cuda11.cudnn86 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
-# pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 GEOMSTATS_BACKEND=jax pip install -e geomstats
 pip install -e .
 ```
@@ -54,7 +53,9 @@ bash SidechainDiff_train.sh
 ```bash
 bash SidechainDiff_test.sh
 ```
-Sample results of torsion angles can be found in `workdir`. [parse_atom14.ipynb](./parse_atom14.ipynb) can transform torsion angles to atom14 coordinates. 
+Sample results of torsion angles can be found in `workdir`. 
+
+[parse_atom14.ipynb](./parse_atom14.ipynb) can transform torsion angles to atom14 coordinates. 
 
 ---------
 ### Train Mutational Effect Predictor DiffAffinity 
@@ -77,7 +78,8 @@ python prediction.py ./context_generator/configs/inference/6m0j.yml
 python prediction.py ./context_generator/configs/inference/7FAE_RBD_Fv_mutation.yml
 ```
 
-
+# Acknowledgements
+Our riemannian score based generative model are modified from [riemannian-score-sde](https://github.com/oxcsml/riemannian-score-sde/tree/main) github repository. 
 
 
 
