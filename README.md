@@ -3,10 +3,10 @@
 ![text](./figures/RDGM.png)
 
 Predicting mutational effects on protein-protein
-binding via a side-chain diffusion probabilistic model. \\
-Shiwei Liu*, Tian Zhu*, Milong Ren, Dongbo Bu, Haicang Zhang# \\
-*These authors contribute equally.\\
-#correspondence should be addressed to H.Z.\\
+binding via a side-chain diffusion probabilistic model. <br>
+Shiwei Liu*, Tian Zhu*, Milong Ren, Dongbo Bu, Haicang Zhang# <br>
+*These authors contribute equally. <br>
+#correspondence should be addressed to H.Z. <br>
 
 [Paper link on NeurIPS 2023](https://neurips.cc/virtual/2023/poster/72495)
 
