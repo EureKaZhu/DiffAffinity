@@ -3,7 +3,12 @@
 ![text](./figures/RDGM.png)
 
 Predicting mutational effects on protein-protein
-binding via a side-chain diffusion probabilistic model ([NeurIPS 2023 Poster](https://neurips.cc/virtual/2023/poster/72495))
+binding via a side-chain diffusion probabilistic model. <br>
+**Shiwei Liu***, **Tian Zhu***, Milong Ren, Chungong Yu, Dongbo Bu, **Haicang Zhang#** <br>
+*These authors contribute equally. <br>
+#Correspondence should be addressed to H.Z. <br> 
+Institute of Computing Technology, Chinese Academy of Sciences.  <br>
+[Paper link on NeurIPS 2023](https://neurips.cc/virtual/2023/poster/72495)
 
 
 ## Install
@@ -79,7 +84,7 @@ python prediction.py ./context_generator/configs/inference/7FAE_RBD_Fv_mutation.
 ```
 
 # Acknowledgements
-Our riemannian score based generative model are modified from [riemannian-score-sde](https://github.com/oxcsml/riemannian-score-sde/tree/main) github repository. 
+We acknowledge that the part of the Riemainn SDE code is adapted from [riemannian-score-sde](https://github.com/oxcsml/riemannian-score-sde/tree/main). Thanks to the authors for sharing their code. 
 
 
 
