@@ -4,7 +4,7 @@
 
 Predicting mutational effects on protein-protein
 binding via a side-chain diffusion probabilistic model. <br> <br>
-**Shiwei Liu***, **Tian Zhu***, Milong Ren, Dongbo Bu, **Haicang Zhang#** <br>
+**Shiwei Liu***, **Tian Zhu***, Milong Ren, Chungong Yu, Dongbo Bu, **Haicang Zhang#** <br>
 *These authors contribute equally. <br>
 #correspondence should be addressed to H.Z. <br> <br>
 
