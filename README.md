@@ -87,6 +87,17 @@ python prediction.py ./context_generator/configs/inference/7FAE_RBD_Fv_mutation.
 We acknowledge that the part of the Riemainn SDE code is adapted from [riemannian-score-sde](https://github.com/oxcsml/riemannian-score-sde/tree/main). Thanks to the authors for sharing their code. 
 
 
-
+# Reference
+Feel free to cite this work if you find it useful to you!
+```
+@inproceedings{
+liu2023predicting,
+title={Predicting mutational effects on protein-protein binding via a side-chain diffusion probabilistic model},
+author={Shiwei Liu and Tian Zhu and Milong Ren and Yu Chungong and Dongbo Bu and Haicang Zhang},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=BGP5Vjt93A}
+}
+```
 
 
